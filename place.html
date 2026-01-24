@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información sobre el Salar de Uyuni, el mayor desierto de sal del mundo ubicado en Bolivia">
+    <meta name="author" content="Alex Condori">
+    <title>Salar de Uyuni - Bolivia</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Salar de Uyuni</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source 
+                    media="(min-width: 768px)" 
+                    srcset="images/salar-hero-large.webp">
+                <img 
+                    src="images/salar-hero-small.webp" 
+                    alt="Salar de Uyuni - El mayor desierto de sal del mundo" 
+                    loading="lazy">
+            </picture>
+        </div>
+
+        <section class="data-section">
+            <h2>Data</h2>
+            <div class="data-content">
+                <p><strong>Area:</strong> 10,582 sq km</p>
+                <p><strong>Elevation:</strong> 3,650 m above sea level</p>
+                <p><strong>Location:</strong> Potosí, Bolivia</p>
+                <p><strong>Province:</strong> Daniel Campos</p>
+                <p><strong>Country:</strong> Bolivia</p>
+                <p><strong>Type:</strong> Salt flat (Salar)</p>
+                <p><strong>Salt reserves:</strong> 10 billion tons</p>
+                <p><strong>Lithium reserves:</strong> 70% of world's lithium</p>
+            </div>
+        </section>
+
+        <section class="weather-section">
+            <h2 class="weather-heading">Weather</h2>
+            <div class="weather-content">
+                <div class="weather-icon-mobile">
+                    <img src="images/partly-cloudy.svg" alt="Partly cloudy weather icon">
+                </div>
+                <div class="weather-info">
+                    <p><strong>Temperature:</strong> 10 °C</p>
+                    <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    <p><strong>Wind:</strong> 5 km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> 😁 Alex Condori 😁 Salar de Uyuni</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
