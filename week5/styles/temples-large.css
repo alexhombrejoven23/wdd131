@@ -1,0 +1,55 @@
+@media (min-width: 1024px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .nav-menu a {
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .page-title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .page-title p {
+        font-size: 1.1rem;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    figure img {
+        height: 280px;
+    }
+    
+    figcaption {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    footer p {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

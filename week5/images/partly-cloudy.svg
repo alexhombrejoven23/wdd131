@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+    <!-- Sun -->
+    <circle cx="32" cy="28" r="12" fill="#FDB813" stroke="#F9A602" stroke-width="2"/>
+    
+    <!-- Sun rays -->
+    <line x1="32" y1="8" x2="32" y2="14" stroke="#FDB813" stroke-width="2" stroke-linecap="round"/>
+    <line x1="32" y1="42" x2="32" y2="48" stroke="#FDB813" stroke-width="2" stroke-linecap="round"/>
+    <line x1="52" y1="28" x2="46" y2="28" stroke="#FDB813" stroke-width="2" stroke-linecap="round"/>
+    <line x1="18" y1="28" x2="12" y2="28" stroke="#FDB813" stroke-width="2" stroke-linecap="round"/>
+    <line x1="45" y1="13" x2="41" y2="17" stroke="#FDB813" stroke-width="2" stroke-linecap="round"/>
+    <line x1="23" y1="39" x2="19" y2="43" stroke="#FDB813" stroke-width="2" stroke-linecap="round"/>
+    <line x1="45" y1="43" x2="41" y2="39" stroke="#FDB813" stroke-width="2" stroke-linecap="round"/>
+    <line x1="23" y1="17" x2="19" y2="13" stroke="#FDB813" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Cloud -->
+    <ellipse cx="28" cy="44" rx="10" ry="8" fill="#E8E8E8" stroke="#D0D0D0" stroke-width="1.5"/>
+    <ellipse cx="38" cy="44" rx="12" ry="9" fill="#F5F5F5" stroke="#D0D0D0" stroke-width="1.5"/>
+    <ellipse cx="32" cy="38" rx="8" ry="7" fill="#FFFFFF" stroke="#D0D0D0" stroke-width="1.5"/>
+</svg>
