@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience AI-powered English learning tools: conversation simulator, writing assistant, and personalized vocabulary quizzes.">
+    <title>AI Tools - FastTrack English AI Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/ai-tools.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">FEAI</span>
+                <span class="logo-full">FastTrack English</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="program.html">6-Month Program</a></li>
+                    <li><a href="ai-tools.html" class="active">AI Tools</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>AI-Powered Learning Tools</h1>
+                <p>Experience the future of language learning with interactive AI assistants</p>
+            </div>
+        </section>
+
+        <section class="tools-intro">
+            <div class="container">
+                <p class="intro-text">Our AI tools provide unlimited practice opportunities, adapting to your skill level and learning pace. Try them out below to see how they can accelerate your English learning journey.</p>
+            </div>
+        </section>
+
+        <section class="tool-demo">
+            <div class="container">
+                <div class="tool-selector">
+                    <button class="tool-tab active" data-tool="conversation">
+                        <span class="tool-icon">💬</span>
+                        Conversation Simulator
+                    </button>
+                    <button class="tool-tab" data-tool="writing">
+                        <span class="tool-icon">📝</span>
+                        Writing Assistant
+                    </button>
+                    <button class="tool-tab" data-tool="quiz">
+                        <span class="tool-icon">🎯</span>
+                        Vocabulary Quiz
+                    </button>
+                </div>
+
+                <div class="tool-content active" id="conversation-tool">
+                    <div class="tool-header">
+                        <h2>AI Conversation Simulator</h2>
+                        <p>Practice real conversations in a safe, judgment-free environment</p>
+                    </div>
+                    <div class="demo-area">
+                        <div class="scenario-selector">
+                            <label for="scenario">Choose a scenario:</label>
+                            <select id="scenario">
+                                <option value="restaurant">Ordering at a Restaurant</option>
+                                <option value="shopping">Shopping for Clothes</option>
+                                <option value="directions">Asking for Directions</option>
+                                <option value="interview">Job Interview</option>
+                                <option value="meeting">Business Meeting</option>
+                            </select>
+                        </div>
+                        <div class="chat-container">
+                            <div class="chat-messages" id="chat-messages">
+                                <div class="ai-message">
+                                    <strong>AI Assistant:</strong> Hello! I'm ready to help you practice English conversation. Choose a scenario above and click "Start Conversation" to begin.
+                                </div>
+                            </div>
+                            <div class="chat-input-area">
+                                <input type="text" id="user-input" placeholder="Type your response here..." disabled>
+                                <button id="send-message" disabled>Send</button>
+                            </div>
+                            <button id="start-conversation" class="primary-button">Start Conversation</button>
+                        </div>
+                        <div class="conversation-stats">
+                            <div class="stat">
+                                <span class="stat-label">Messages:</span>
+                                <span id="message-count">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Level:</span>
+                                <span id="conversation-level">Beginner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Writing Assistant -->
+                <div class="tool-content" id="writing-tool">
+                    <div class="tool-header">
+                        <h2>AI Writing Assistant</h2>
+                        <p>Get instant feedback on grammar, style, and clarity</p>
+                    </div>
+                    <div class="demo-area">
+                        <div class="writing-container">
+                            <textarea id="writing-input" placeholder="Write or paste your text here. Try writing about your day, a story, or a business email..."></textarea>
+                            <button id="analyze-writing" class="primary-button">Analyze Writing</button>
+                        </div>
+                        <div class="feedback-container" id="feedback-container">
+                            <h3>Feedback</h3>
+                            <div class="feedback-placeholder">
+                                <p>Enter some text and click "Analyze Writing" to receive feedback.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-content" id="quiz-tool">
+                    <div class="tool-header">
+                        <h2>Personalized Vocabulary Quiz</h2>
+                        <p>Test your knowledge with adaptive quizzes</p>
+                    </div>
+                    <div class="demo-area">
+                        <div class="quiz-settings">
+                            <div class="setting-group">
+                                <label for="quiz-level">Difficulty Level:</label>
+                                <select id="quiz-level">
+                                    <option value="beginner">Beginner (A1-A2)</option>
+                                    <option value="intermediate">Intermediate (B1-B2)</option>
+                                    <option value="advanced">Advanced (C1-C2)</option>
+                                </select>
+                            </div>
+                            <div class="setting-group">
+                                <label for="quiz-category">Category:</label>
+                                <select id="quiz-category">
+                                    <option value="general">General Vocabulary</option>
+                                    <option value="business">Business English</option>
+                                    <option value="travel">Travel & Tourism</option>
+                                    <option value="academic">Academic English</option>
+                                </select>
+                            </div>
+                            <button id="start-quiz" class="primary-button">Generate Quiz</button>
+                        </div>
+                        <div class="quiz-container hidden" id="quiz-container">
+                            <div class="quiz-progress">
+                                <span>Question <span id="current-question">1</span> of <span id="total-questions">5</span></span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="progress-fill"></div>
+                                </div>
+                            </div>
+                            <div class="question-card">
+                                <h3 id="question-text"></h3>
+                                <div class="answer-options" id="answer-options"></div>
+                            </div>
+                            <div class="quiz-feedback hidden" id="quiz-feedback"></div>
+                        </div>
+                        <div class="quiz-results hidden" id="quiz-results">
+                            <h3>Quiz Complete!</h3>
+                            <div class="results-summary">
+                                <div class="result-item">
+                                    <span class="result-label">Score:</span>
+                                    <span class="result-value" id="quiz-score">0/5</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Percentage:</span>
+                                    <span class="result-value" id="quiz-percentage">0%</span>
+                                </div>
+                            </div>
+                            <button id="retake-quiz" class="secondary-button">Try Another Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tools-benefits">
+            <div class="container">
+                <h2>How AI Tools Accelerate Learning</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Unlimited Practice</h3>
+                        <p>Unlike human tutors, our AI tools are available 24/7. Practice anytime, anywhere, as much as you need without scheduling or additional costs.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Instant Feedback</h3>
+                        <p>Get immediate corrections and suggestions. Learn from your mistakes in real-time and see improvement faster than traditional methods.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Personalized Learning</h3>
+                        <p>The AI adapts to your level, learning style, and goals. Focus on exactly what you need to improve without wasting time on concepts you've mastered.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Safe Environment</h3>
+                        <p>Make mistakes without embarrassment. Our AI provides supportive feedback that builds confidence rather than discouragement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Experience the Full Power of AI Learning</h2>
+                <p>These demos are just a glimpse. Enroll to access the complete suite of AI tools with advanced features, progress tracking, and personalized recommendations.</p>
+                <a href="contact.html" class="cta-button">Start Learning Today</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FastTrack English AI Hub</h4>
+                    <p>Transforming language learning through AI-powered personalization</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="program.html">Program</a></li>
+                        <li><a href="ai-tools.html">AI Tools</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@fasttrackenglish.ai</p>
+                    <p>Phone: +591 123 456 789</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FastTrack English AI Hub. All rights reserved.</p>
+                <a href="references.html">References</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/ai-tools.js"></script>
+</body>
+</html>
